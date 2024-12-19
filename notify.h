@@ -16,5 +16,6 @@
 extern void notify(const char *);
 extern void send_notification(char *, char *);
 extern void play_audio(char *);
+extern void obs(char *);
 
 #endif

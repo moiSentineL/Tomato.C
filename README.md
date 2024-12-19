@@ -33,6 +33,9 @@
   <a href="#-license">License</a>
 </p>
 
+### This fork will NOT work in your system
+And that is because this includes some custom scripts that are *hardcoded*. Consider using the original [Tomato.C](https://github.com/gabrielzschmitz/Tomato.C).
+
 ## 🍅 The Pomodoro Method
 
 <img src="./media/tomatomethod.gif" alt="tomatomethod" width="190px" align="right">
