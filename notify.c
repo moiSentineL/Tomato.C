@@ -22,7 +22,7 @@ void notify(const char *message) {
   /* Autostart work notification */
   if (strcmp(message, "autostartwork") == 0) {
     if (strcmp(ICONS, "nerdicons") == 0 && WSL == 0)
-      send_notification("󱣲 A pomodoro has ended!",
+      send_notification("󱣲  A pomodoro has ended!",
                         "Unpause to start the pause");
     else if (strcmp(ICONS, "iconson") == 0 && WSL == 0)
       send_notification("🔄 A pomodoro has ended!",
@@ -36,7 +36,7 @@ void notify(const char *message) {
   /* Autostart pause notification */
   else if (strcmp(message, "autostartpause") == 0) {
     if (strcmp(ICONS, "nerdicons") == 0 && WSL == 0)
-      send_notification("󱣲 A pause has ended!", "Unpause to continue");
+      send_notification("󱣲  A pause has ended!", "Unpause to continue");
     else if (strcmp(ICONS, "iconson") == 0 && WSL == 0)
       send_notification("🔄 A pause has ended!", "Unpause to continue");
     else
@@ -48,7 +48,7 @@ void notify(const char *message) {
   /* Work notification */
   else if (strcmp(message, "worktime") == 0) {
     if (strcmp(ICONS, "nerdicons") == 0 && WSL == 0)
-      send_notification("󱎫 Work!", "You need to focus");
+      send_notification("󱎫  Work!", "You need to focus");
     else if (strcmp(ICONS, "iconson") == 0 && WSL == 0)
       send_notification("👷 Work!", "You need to focus");
     else
@@ -60,7 +60,7 @@ void notify(const char *message) {
   /* Short Pause notification */
   else if (strcmp(message, "shortpause") == 0) {
     if (strcmp(ICONS, "nerdicons") == 0)
-      send_notification(" Pause Break", "You have some time to chill");
+      send_notification("  Pause Break", "You have some time to chill");
     else if (strcmp(ICONS, "iconson") == 0)
       send_notification("☕ Pause Break", "You have some time to chill");
     else
@@ -72,7 +72,7 @@ void notify(const char *message) {
   /* Long Pause notification */
   else if (strcmp(message, "longpause") == 0) {
     if (strcmp(ICONS, "nerdicons") == 0 && WSL == 0)
-      send_notification(" Long Pause Break", "You have some time to chill");
+      send_notification("  Long Pause Break", "You have some time to chill");
     else if (strcmp(ICONS, "iconson") == 0 && WSL == 0)
       send_notification("🌴 Long Pause Break", "You have some time to chill");
     else
@@ -84,7 +84,7 @@ void notify(const char *message) {
   /* End of cycle notification */
   else {
     if (strcmp(ICONS, "nerdicons") == 0 && WSL == 0)
-      send_notification(" End of Pomodoro Cycle",
+      send_notification("  End of Pomodoro Cycle",
                         "Feel free to start another!");
     else if (strcmp(ICONS, "iconson") == 0 && WSL == 0)
       send_notification("🍅 End of Pomodoro Cycle",
