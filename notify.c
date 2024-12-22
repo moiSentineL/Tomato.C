@@ -79,7 +79,7 @@ void notify(const char *message) {
       send_notification("Long Pause Break", "You have some time to chill");
 
     play_audio("/usr/local/share/tomato/sounds/pausenotify.mp3");
-    obs("/home/nibir/.dotfiles/scripts/obs/obs-pause.sh");
+    obs("/home/nibir/.dotfiles/scripts/obs/obs-longpause.sh");
   }
   /* End of cycle notification */
   else {
@@ -93,7 +93,7 @@ void notify(const char *message) {
       send_notification("End of Pomodoro Cycle", "Feel free to start another!");
 
     play_audio("/usr/local/share/tomato/sounds/endnotify.mp3");
-    obs("/home/nibir/.dotfiles/scripts/obs/obs-pause.sh");
+    obs("/home/nibir/.dotfiles/scripts/obs/obs-text-off.sh");
   }
 }
 
